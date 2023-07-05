@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 const canvas = document.querySelector(".webgl");
 console.log(canvas)
 //Scene
@@ -16,8 +18,8 @@ const sizes = {
 
 //Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height); //usually we use 45-55
-// camera.position.x = 2;
-// camera.position.y = 2;
+camera.position.x = 1;
+camera.position.y = 0;
 camera.position.z = 2;
 
 scene.add(camera);
